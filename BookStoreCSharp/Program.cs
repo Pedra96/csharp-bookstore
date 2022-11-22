@@ -1,18 +1,4 @@
-﻿/*
-Titolo
-Autore
-ISBN
-Numero pagine
-Peso del libro
-Larghezza, Altezza e Profondità del libro
-Valutazione media
-Numero di recensioni
-se è disponibile in versione Kindle
-se la copertina flessibile è disponibile
-*/
-
-
-string Titolo = "Metro 2035";
+﻿string Titolo = "Metro 2035";
 string Autore = "Dmitry Glukhovsky";
 string ISBN = "978-5-17-090538-6";
 float larghezza = 13.8f;
