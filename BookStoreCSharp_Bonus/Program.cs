@@ -1,17 +1,19 @@
 ﻿
-Console.WriteLine("Inserisci titolo libro");
-string TitoloLibro = Console.ReadLine();
+string[] LibroArray = new string[] { "Titolo: ", "Autore: ", "ISBN: ", "Numero pagine: ", "Peso del libro: ", "Larghezza: ", "Altezza: ", "Profondità: ", "Valutazione media: ", "Numero di recensioni: ", "se ha il Kindle (y,n): ", "se ha la copertina flessibile (y,n): " };
+Dictionary<int,string> Libro = new Dictionary<int,string>();
 
-Console.WriteLine("Inserisci autore");
-string LibroAutore= Console.ReadLine();
+for(int i = 0; i < LibroArray.Length; i++)
+{
+    Console.WriteLine("inserisci " + LibroArray[i]);
+    string InputUtente = Console.ReadLine();
+    Libro.Add(i,InputUtente );
+}
 
-Dictionary<string,string> Libro = new Dictionary<string,string>();
-Libro.Add("titolo", TitoloLibro);
-
-Libro.Add("autore", LibroAutore);
-
-Console.WriteLine(Libro["titolo"]);
-Console.WriteLine(Libro["autore"]);
+Console.WriteLine("-------------------------------------------------------");
+for(int j=0; j < LibroArray.Length; j++)
+{
+    Console.WriteLine(LibroArray[j] + Libro[j]);
+}
 
 
 /*
